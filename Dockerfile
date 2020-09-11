@@ -1,4 +1,4 @@
-FROM python:3.8-alpine
+FROM python:3.8
 LABEL Aashish Adhikari
 
 ENV PYTHONUNBUFFERED 1
@@ -10,7 +10,6 @@ RUN mkdir /app
 WORKDIR /app
 COPY ./app /app
 
-RUN adduser -D user
-USER user
-
+# RUN adduser -D user
+# USER user
 
